@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Aryan Bansal</title>
+    <link rel="stylesheet" href="css/file.css" />
+    <link rel="icon" href="images/logo.png" type="image/x-icon" />
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const loggedIn = localStorage.getItem("loggedIn");
+        if (!loggedIn) {
+          // If user is not logged in, redirect to login.html
+          window.location.href = "login.html";
+        } else {
+          // User is logged in, load data and populate Main Heading dropdown
+          loadDataAndPopulateMainHeadings();
+        }
+      });
+
+      window.addEventListener("beforeunload", function () {
+        localStorage.removeItem("loggedIn");
+      });
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Notes</h1>
+      <div class="filters">
+        <label for="mainHeading">Select Main</label>
+        <select id="mainHeading" onchange="filterSubheadings()">
+          <option value="all">All</option>
+        </select>
+        <label for="subHeading">Select Subject</label>
+        <select id="subHeading" onchange="updateShowButton()">
+          <option value="all">All</option>
+        </select>
+        <button id="showButton" onclick="showPDFLinks()" disabled>Show</button>
+      </div>
+    </div>
+
+    <div id="pdfLinks" style="display: none">
+      <!-- PDF links will be displayed here -->
+    </div>
+
+    <script src="data/file.js"></script>
+    <script src="compJS/file.js"></script>
+  </body>
+</html>
