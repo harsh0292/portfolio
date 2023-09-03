@@ -16,14 +16,14 @@ const projectsData = [{
         title: 'Swift Mart',
         description: 'Crafted a captivating E-Commerce Website solely through Front-End Devlopment showcasing an intutive User Interface, seamless navigation, and a visually engaging shoping experience.',
         imageUrl: '../images/robot.jpg',
-        link: 'https://github.com/Aryan0169/Gesture-Control-Bot.git',
+        link: 'https://github.com/Aryan0169/Gesture-Control-Bot.g',
         buttontitle: "Website",
     },
     {
         title: 'Leetcode Profile',
         description: 'This is my Leetcode Profile which shows my coding skills.',
         imageUrl: '../images/behance.png',
-        link: 'https://www.behance.net/aryanbansal6',
+        link: 'https://leetcode.com/harshgarg02092002/',
         buttontitle: "Leetcode",
     },
     // Add more project objects as needed
