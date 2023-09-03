@@ -109,7 +109,7 @@
 
 document
     .getElementById("loginForm")
-    .addEventListener("submit", function (event) {
+    .addEventListener("submit", function(event) {
         event.preventDefault();
 
 
@@ -279,7 +279,7 @@ Outro:
 
 */
 
-        if (username === "aryan123" && password === "aryan123") {
+        if (username === "harsh123" && password === "harsh123") {
             localStorage.setItem('loggedIn', 'true');
             window.location.href = "file.html";
         } else {
@@ -357,4 +357,3 @@ Outro:
 
 */
     });
-
