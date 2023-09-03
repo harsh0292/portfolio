@@ -16,7 +16,7 @@ const projectsData = [{
         title: 'Swift Mart',
         description: 'Crafted a captivating E-Commerce Website solely through Front-End Devlopment showcasing an intutive User Interface, seamless navigation, and a visually engaging shoping experience.',
         imageUrl: '../images/robot.jpg',
-        link: 'https://swiftmart-harsh.netlify.app/',
+        link: 'https://github.com/Aryan0169/Gesture-Control-Bot.git',
         buttontitle: "Website",
     },
     {
